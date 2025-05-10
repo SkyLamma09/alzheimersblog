@@ -3,83 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alzheimer's Blog - Support & Resources</title>
+    <title>Alzheimer's Blog | Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container header-content">
-            <div class="logo">
-                <i class="fas fa-brain"></i>
-                <span>Alzheimer's Blog</span>
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <nav>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Alzheimer's Blog</h1>
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Alzheimer's</a></li>
-                    <li><a href="caregiving.html">Caregiving</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="support.html">Support Groups</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="resources.html">Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
     <section class="hero">
-        <div class="container hero-content">
-            <h1>Navigating the Alzheimer's Journey Together</h1>
-            <p>Find support, resources, and hope for those affected by Alzheimer's disease and other dementias.</p>
-            <a href="support.html" class="btn">Get Support Now</a>
+        <div class="container">
+            <h2>Support, Education, and Hope for Alzheimer's Journey</h2>
+            <p>Sharing stories and resources to help families affected by Alzheimer's and dementia.</p>
+            <a href="blog.html" class="btn">Read Our Stories</a>
         </div>
     </section>
-    
-    <main class="main">
+
+    <section class="featured-posts">
         <div class="container">
-            <h2 class="section-title">Latest Articles</h2>
-            <div class="blog-posts">
+            <h2>Latest Articles</h2>
+            <div class="post-grid">
                 <article class="post-card">
-                    <div class="post-img">
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Elderly couple holding hands">
-                    </div>
-                    <div class="post-content">
-                        <div class="post-date">June 15, 2023</div>
-                        <h3 class="post-title">10 Early Signs of Alzheimer's You Shouldn't Ignore</h3>
-                        <p class="post-excerpt">Learn to recognize the subtle symptoms that may indicate the onset of Alzheimer's disease.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                    <img src="images/post1.jpg" alt="Early Signs of Alzheimer's">
+                    <h3>Understanding Early Signs: When to Seek Help</h3>
+                    <p>Learn to recognize the early symptoms of Alzheimer's and the importance of early diagnosis.</p>
+                    <a href="#" class="read-more">Read More</a>
                 </article>
-                
                 <article class="post-card">
-                    <div class="post-img">
-                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Caregiver helping senior">
-                    </div>
-                    <div class="post-content">
-                        <div class="post-date">June 8, 2023</div>
-                        <h3 class="post-title">Managing Caregiver Stress: Essential Self-Care Tips</h3>
-                        <p class="post-excerpt">Discover practical strategies to maintain your own health while caring for a loved one.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                    <img src="images/post2.jpg" alt="Caregiver Support">
+                    <h3>Caregiver Burnout: How to Recognize and Prevent It</h3>
+                    <p>Practical tips for caregivers to maintain their well-being while caring for a loved one.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <article class="post-card">
+                    <img src="images/post3.jpg" alt="Healthy Lifestyle">
+                    <h3>Diet and Lifestyle Tips for Brain Health</h3>
+                    <p>Discover foods and habits that may help support cognitive function.</p>
+                    <a href="#" class="read-more">Read More</a>
                 </article>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <div class="footer-links">
-                <a href="about.html">About Us</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="contact.html">Contact</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Alzheimer's Blog</h3>
+                    <p>Providing support and education for families affected by Alzheimer's.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <a href="https://youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
-            <p class="copyright">© 2023 Alzheimer's Blog. All rights reserved.</p>
+            <div class="copyright">
+                <p>&copy; 2023 Alzheimer's Blog. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-    
-    <script src="js/script.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
