@@ -3,405 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Lane - Alzheimer's Support & Resources</title>
-    <style>
-        :root {
-            --primary: #4a6fa5;
-            --secondary: #166088;
-            --accent: #ff7e5f;
-            --light: #f8f9fa;
-            --dark: #343a40;
-            --gray: #6c757d;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .container {
-            width: 85%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo i {
-            margin-right: 10px;
-            color: var(--accent);
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 1.5rem;
-        }
-        
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        nav ul li a:hover {
-            color: var(--accent);
-        }
-        
-        .hero {
-            background: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            color: white;
-            max-width: 600px;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .hero p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 0.7rem 1.5rem;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .btn:hover {
-            background: #e86a4a;
-            transform: translateY(-2px);
-        }
-        
-        .main {
-            padding: 3rem 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: var(--secondary);
-        }
-        
-        .blog-posts {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-        
-        .post-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .post-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .post-img {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .post-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .post-card:hover .post-img img {
-            transform: scale(1.1);
-        }
-        
-        .post-content {
-            padding: 1.5rem;
-        }
-        
-        .post-date {
-            color: var(--gray);
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .post-title {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: var(--dark);
-        }
-        
-        .post-excerpt {
-            color: var(--gray);
-            margin-bottom: 1.5rem;
-        }
-        
-        .read-more {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-        }
-        
-        .read-more i {
-            margin-left: 5px;
-            transition: transform 0.3s ease;
-        }
-        
-        .read-more:hover i {
-            transform: translateX(5px);
-        }
-        
-        .resources {
-            background: var(--light);
-            padding: 3rem 0;
-        }
-        
-        .resource-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-        
-        .resource-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-        
-        .resource-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .resource-icon {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-        
-        .resource-title {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--dark);
-        }
-        
-        .newsletter {
-            background: var(--secondary);
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
-        
-        .newsletter h2 {
-            margin-bottom: 1rem;
-        }
-        
-        .newsletter p {
-            max-width: 600px;
-            margin: 0 auto 1.5rem;
-        }
-        
-        .newsletter-form {
-            display: flex;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        
-        .newsletter-form input {
-            flex: 1;
-            padding: 0.8rem 1rem;
-            border: none;
-            border-radius: 5px 0 0 5px;
-            font-size: 1rem;
-        }
-        
-        .newsletter-form button {
-            background: var(--accent);
-            color: white;
-            border: none;
-            padding: 0 1.5rem;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
-            font-weight: 600;
-            transition: background 0.3s ease;
-        }
-        
-        .newsletter-form button:hover {
-            background: #e86a4a;
-        }
-        
-        footer {
-            background: var(--dark);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-        }
-        
-        .footer-links a {
-            color: white;
-            margin: 0 1rem;
-            text-decoration: none;
-        }
-        
-        .footer-links a:hover {
-            color: var(--accent);
-        }
-        
-        .social-icons {
-            margin-bottom: 1.5rem;
-        }
-        
-        .social-icons a {
-            color: white;
-            margin: 0 0.5rem;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-        
-        .social-icons a:hover {
-            color: var(--accent);
-        }
-        
-        .copyright {
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-        
-        /* Mobile menu */
-        .menu-toggle {
-            display: none;
-            cursor: pointer;
-            font-size: 1.5rem;
-        }
-        
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .logo {
-                margin-bottom: 1rem;
-            }
-            
-            nav {
-                width: 100%;
-                display: none;
-            }
-            
-            nav.active {
-                display: block;
-            }
-            
-            nav ul {
-                flex-direction: column;
-            }
-            
-            nav ul li {
-                margin: 0.5rem 0;
-            }
-            
-            .menu-toggle {
-                display: block;
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-            }
-            
-            .hero-content {
-                padding: 0 1rem;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .newsletter-form {
-                flex-direction: column;
-            }
-            
-            .newsletter-form input {
-                border-radius: 5px;
-                margin-bottom: 0.5rem;
-            }
-            
-            .newsletter-form button {
-                border-radius: 5px;
-                padding: 0.8rem;
-            }
-        }
-    </style>
+    <title>Alzheimer's Blog - Support & Resources</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -409,19 +12,19 @@
         <div class="container header-content">
             <div class="logo">
                 <i class="fas fa-brain"></i>
-                <span>Memory Lane</span>
+                <span>Alzheimer's Blog</span>
             </div>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Alzheimer's</a></li>
-                    <li><a href="#">Caregiving</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Support Groups</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Alzheimer's</a></li>
+                    <li><a href="caregiving.html">Caregiving</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="support.html">Support Groups</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -431,7 +34,7 @@
         <div class="container hero-content">
             <h1>Navigating the Alzheimer's Journey Together</h1>
             <p>Find support, resources, and hope for those affected by Alzheimer's disease and other dementias.</p>
-            <a href="#" class="btn">Get Support Now</a>
+            <a href="support.html" class="btn">Get Support Now</a>
         </div>
     </section>
     
@@ -446,7 +49,7 @@
                     <div class="post-content">
                         <div class="post-date">June 15, 2023</div>
                         <h3 class="post-title">10 Early Signs of Alzheimer's You Shouldn't Ignore</h3>
-                        <p class="post-excerpt">Learn to recognize the subtle symptoms that may indicate the onset of Alzheimer's disease and when to seek professional advice.</p>
+                        <p class="post-excerpt">Learn to recognize the subtle symptoms that may indicate the onset of Alzheimer's disease.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
@@ -458,147 +61,25 @@
                     <div class="post-content">
                         <div class="post-date">June 8, 2023</div>
                         <h3 class="post-title">Managing Caregiver Stress: Essential Self-Care Tips</h3>
-                        <p class="post-excerpt">Caregiving can be overwhelming. Discover practical strategies to maintain your own health while caring for a loved one with dementia.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                
-                <article class="post-card">
-                    <div class="post-img">
-                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Medical research">
-                    </div>
-                    <div class="post-content">
-                        <div class="post-date">May 30, 2023</div>
-                        <h3 class="post-title">Breakthroughs in Alzheimer's Research: 2023 Update</h3>
-                        <p class="post-excerpt">Stay informed about the latest scientific advancements and promising treatments in the fight against Alzheimer's disease.</p>
+                        <p class="post-excerpt">Discover practical strategies to maintain your own health while caring for a loved one.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
         </div>
     </main>
-    
-    <section class="resources">
-        <div class="container">
-            <h2 class="section-title">Helpful Resources</h2>
-            <div class="resource-cards">
-                <div class="resource-card">
-                    <div class="resource-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <h3 class="resource-title">Educational Materials</h3>
-                    <p>Download our free guides about Alzheimer's stages, caregiving, and more.</p>
-                </div>
-                
-                <div class="resource-card">
-                    <div class="resource-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <h3 class="resource-title">Support Groups</h3>
-                    <p>Connect with others who understand what you're going through.</p>
-                </div>
-                
-                <div class="resource-card">
-                    <div class="resource-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3 class="resource-title">Local Services</h3>
-                    <p>Find care facilities, doctors, and support services in your area.</p>
-                </div>
-                
-                <div class="resource-card">
-                    <div class="resource-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3 class="resource-title">Get Involved</h3>
-                    <p>Learn how you can help raise awareness and funds for research.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="newsletter">
-        <div class="container">
-            <h2>Stay Informed</h2>
-            <p>Subscribe to our newsletter for the latest updates on Alzheimer's research, caregiving tips, and community events.</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </section>
-    
+
     <footer>
         <div class="container">
             <div class="footer-links">
-                <a href="#">About Us</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact</a>
+                <a href="about.html">About Us</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="contact.html">Contact</a>
             </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            <p class="copyright">© 2023 Memory Lane Alzheimer's Support. All rights reserved.</p>
+            <p class="copyright">© 2023 Alzheimer's Blog. All rights reserved.</p>
         </div>
     </footer>
     
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('nav').classList.toggle('active');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Newsletter form submission
-        const newsletterForm = document.querySelector('.newsletter-form');
-        if (newsletterForm) {
-            newsletterForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const email = this.querySelector('input').value;
-                
-                // In a real application, you would send this to your server
-                console.log('Subscribed with email:', email);
-                
-                // Show a success message
-                alert('Thank you for subscribing to our newsletter!');
-                this.querySelector('input').value = '';
-            });
-        }
-        
-        // Animate post cards on scroll
-        const observerOptions = {
-            threshold: 0.1
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-        
-        document.querySelectorAll('.post-card').forEach((card, index) => {
-            card.style.opacity = 0;
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
-            observer.observe(card);
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
