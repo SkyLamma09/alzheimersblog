@@ -53,6 +53,8 @@
             font-weight: 700;
             display: flex;
             align-items: center;
+            text-decoration: none;
+            color: white;
         }
         
         .logo i {
@@ -252,49 +254,6 @@
             color: var(--dark);
         }
         
-        footer {
-            background: var(--dark);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-        }
-        
-        .footer-links a {
-            color: white;
-            margin: 0 1rem;
-            text-decoration: none;
-        }
-        
-        .footer-links a:hover {
-            color: var(--accent);
-        }
-        
-        .social-icons {
-            margin-bottom: 1.5rem;
-        }
-        
-        .social-icons a {
-            color: white;
-            margin: 0 0.5rem;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-        
-        .social-icons a:hover {
-            color: var(--accent);
-        }
-        
-        .copyright {
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-        
         /* Mobile menu */
         .menu-toggle {
             display: none;
@@ -349,10 +308,10 @@
 <body>
     <header>
         <div class="container header-content">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <i class="fas fa-brain"></i>
                 <span>Memory Lane</span>
-            </div>
+            </a>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -536,25 +495,7 @@
             </div>
         </div>
     </section>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="#">About Us</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            <p class="copyright">© 2023 Memory Lane Alzheimer's Support. All rights reserved.</p>
-        </div>
-    </footer>
-    
+
     <script>
         // Mobile menu toggle
         document.querySelector('.menu-toggle').addEventListener('click', function() {
