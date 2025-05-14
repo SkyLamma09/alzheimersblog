@@ -1,23 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Early Detection Breakthroughs | Memory Lane</title>
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Detection Breakthroughs | Memory Lane</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <a href="../index.html" class="back-button">
-      <i class="fas fa-arrow-left"></i> Back to Home
-    </a>
+    <header>
+        <div class="container header-content">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-brain"></i>
+                <span>Memory Lane</span>
+            </a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#stories">Stories</a></li>
+                    <li><a href="../index.html#tips">Tips</a></li>
+                    <li><a href="../index.html#research">Research</a></li>
+                    <li><a href="../index.html#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <article class="subpage-article">
-      <h1>Early Detection Breakthroughs</h1>
-      <img src="https://images.unsplash.com/photo-1579165466741-0d321db17c75?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Research lab">
-      <p>New blood tests and retinal scans showing promise in detecting Alzheimer's biomarkers years before symptoms appear...</p>
-    </article>
-  </div>
+    <main class="main">
+        <div class="container">
+            <article class="subpage-article">
+                <h1>Early Detection Breakthroughs</h1>
+                <img src="https://images.unsplash.com/photo-1579165466741-0d321db17c75?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Research lab">
+                <p>Recent advancements in Alzheimer's research are making earlier detection possible, potentially allowing for interventions before significant brain damage occurs.</p>
+                
+                <h2>Blood Biomarkers</h2>
+                <p>Scientists have identified several proteins in blood that may indicate Alzheimer's pathology years before symptoms appear. The p-tau217 test has shown particular promise, with accuracy rates comparable to more invasive tests.</p>
+                
+                <h2>Retinal Scanning</h2>
+                <p>Researchers are developing non-invasive retinal scans that can detect beta-amyloid deposits in the eye, which correlate with those in the brain. This technology could become part of routine eye exams.</p>
+                
+                <h2>Digital Cognitive Testing</h2>
+                <p>New computerized assessments can detect subtle cognitive changes earlier than traditional paper tests. Some use AI to analyze speech patterns or typing speed for early warning signs.</p>
+                
+                <h2>Imaging Advances</h2>
+                <ul>
+                    <li><strong>PET scans</strong> now require lower doses of radioactive tracers</li>
+                    <li><strong>Ultra-high resolution MRI</strong> can detect smaller structural changes</li>
+                    <li><strong>Combination imaging</strong> provides more comprehensive biomarkers</li>
+                </ul>
+                
+                <h2>Implications</h2>
+                <p>While earlier diagnosis raises ethical questions, it allows for:</p>
+                <ol>
+                    <li>Earlier lifestyle interventions that may slow progression</li>
+                    <li>Better planning for patients and families</li>
+                    <li>More targeted recruitment for clinical trials</li>
+                </ol>
+            </article>
+        </div>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
