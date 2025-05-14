@@ -1,66 +1,128 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memory Lane - Subpage</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Memory Lane - A Daughter's Reflection</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --primary: #4a6fa5;
+      --secondary: #166088;
+      --accent: #ff7e5f;
+      --light: #f8f9fa;
+      --dark: #343a40;
+      --gray: #6c757d;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      width: 85%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    .logo i {
+      margin-right: 10px;
+      color: var(--accent);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      padding: 2rem 0;
+    }
+
+    .page-title {
+      text-align: center;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+  </style>
 </head>
-
 <body>
-  <nav>
-    <div class="container">
-      <a href="index.html" class="logo">Memory Lane</a>
-      <ul class="nav-links">
-        <li><a href="index.html#stories">Stories</a></li>
-        <li><a href="index.html#tips">Caregiver Tips</a></li>
-        <li><a href="index.html#research">Latest Research</a></li>
-        <li><a href="index.html#resources">Resources</a></li>
-      </ul>
+  <header>
+    <div class="container header-content">
+      <a href="../index.html" class="logo">
+        <i class="fas fa-brain"></i>
+        <span>Memory Lane</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../index.html#stories">Stories</a></li>
+          <li><a href="../index.html#tips">Tips</a></li>
+          <li><a href="../index.html#research">Research</a></li>
+          <li><a href="../index.html#resources">Resources</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
-
-  <header class="subpage-header">
-    <h1>Subpage Title Here</h1>
   </header>
 
-  <main class="content">
+  <main>
     <div class="container">
-      <p>This is the main content of the subpage. Customize this text to reflect the story, tip, or research you are presenting.</p>
+      <h1 class="page-title">A Daughter's Reflection</h1>
+      <div class="content">
+        <p>Watching my father fade into the shadows of Alzheimer’s was like losing him piece by piece. The strong man who once guided me through life became dependent, often scared, and sometimes unrecognizable. Still, I held on—learning to meet him in his world instead of trying to drag him back into mine. It was one of the hardest, most heartbreaking things I’ve ever done, yet also the most deeply meaningful.</p>
+
+        <p>I kept a journal throughout the years, capturing small moments: the warmth of his hand, his laughter during a lucid spell, the comfort of routine. These memories, though tinged with sorrow, are treasures I carry. I share this in hopes that others might find comfort in knowing they’re not alone, and that even amid Alzheimer’s challenges, love and grace endure.</p>
+      </div>
     </div>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Memory Lane. All rights reserved.</p>
-    </div>
-  </footer>
 </body>
-
 </html>
-
-/* style.css - Add these styles if not already present */
-
-.subpage-header {
-  background-color: #e0f7fa;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.content {
-  padding: 40px 20px;
-  background: #fff;
-  min-height: 400px;
-}
-
-.footer {
-  background: #0288d1;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 14px;
-  margin-top: 40px;
-}
