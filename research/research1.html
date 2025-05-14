@@ -1,72 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Early Detection Breakthroughs | Memory Lane</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Lane - A Daughter’s Reflections</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --primary: #4a6fa5;
+      --secondary: #166088;
+      --accent: #ff7e5f;
+      --light: #f8f9fa;
+      --dark: #343a40;
+      --gray: #6c757d;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      width: 85%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    .logo i {
+      margin-right: 10px;
+      color: var(--accent);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      padding: 2rem 0;
+    }
+
+    .page-title {
+      text-align: center;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container header-content">
-            <a href="../index.html" class="logo">
-                <i class="fas fa-brain"></i>
-                <span>Memory Lane</span>
-            </a>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html#stories">Stories</a></li>
-                    <li><a href="../index.html#tips">Tips</a></li>
-                    <li><a href="../index.html#research">Research</a></li>
-                    <li><a href="../index.html#resources">Resources</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container header-content">
+      <a href="../index.html" class="logo">
+        <i class="fas fa-brain"></i>
+        <span>Memory Lane</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../index.html#stories">Stories</a></li>
+          <li><a href="../index.html#tips">Tips</a></li>
+          <li><a href="../index.html#research">Research</a></li>
+          <li><a href="../index.html#resources">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main class="main">
-        <div class="container">
-            <article class="subpage-article">
-                <h1>Early Detection Breakthroughs</h1>
-                <img src="https://images.unsplash.com/photo-1579165466741-0d321db17c75?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Research lab">
-                <p>Recent advancements in Alzheimer's research are making earlier detection possible, potentially allowing for interventions before significant brain damage occurs.</p>
-                
-                <h2>Blood Biomarkers</h2>
-                <p>Scientists have identified several proteins in blood that may indicate Alzheimer's pathology years before symptoms appear. The p-tau217 test has shown particular promise, with accuracy rates comparable to more invasive tests.</p>
-                
-                <h2>Retinal Scanning</h2>
-                <p>Researchers are developing non-invasive retinal scans that can detect beta-amyloid deposits in the eye, which correlate with those in the brain. This technology could become part of routine eye exams.</p>
-                
-                <h2>Digital Cognitive Testing</h2>
-                <p>New computerized assessments can detect subtle cognitive changes earlier than traditional paper tests. Some use AI to analyze speech patterns or typing speed for early warning signs.</p>
-                
-                <h2>Imaging Advances</h2>
-                <ul>
-                    <li><strong>PET scans</strong> now require lower doses of radioactive tracers</li>
-                    <li><strong>Ultra-high resolution MRI</strong> can detect smaller structural changes</li>
-                    <li><strong>Combination imaging</strong> provides more comprehensive biomarkers</li>
-                </ul>
-                
-                <h2>Implications</h2>
-                <p>While earlier diagnosis raises ethical questions, it allows for:</p>
-                <ol>
-                    <li>Earlier lifestyle interventions that may slow progression</li>
-                    <li>Better planning for patients and families</li>
-                    <li>More targeted recruitment for clinical trials</li>
-                </ol>
-            </article>
-        </div>
-    </main>
+  <main>
+    <div class="container">
+      <h1 class="page-title">A Daughter’s Reflections</h1>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat diam vitae nisl dapibus, ut dictum nulla cursus. Morbi volutpat ultrices quam, sed dignissim arcu tincidunt sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('nav').classList.toggle('active');
-        });
-    </script>
+        <p>Curabitur pretium faucibus sem, at fermentum enim pharetra in. Proin tincidunt orci vel risus accumsan, at tincidunt justo euismod. Etiam consequat congue augue, vitae bibendum libero gravida vel. Quisque sed sapien non mauris rutrum condimentum.</p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
