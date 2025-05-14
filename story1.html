@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our 10-Year Alzheimer's Journey | Memory Support</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS from index.html */
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #166088;
+            --accent: #ff7e5f;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --gray: #6c757d;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        .logo i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        .main {
+            padding: 3rem 0;
+        }
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .article-content h1 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link i {
+            margin-right: 5px;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        .footer-section ul {
+            list-style: none;
+        }
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+        .social-icons {
+            margin-top: 1rem;
+        }
+        .social-icons a {
+            color: white;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: var(--accent);
+        }
+        .copyright {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .logo {
+                margin-bottom: 1rem;
+            }
+            nav {
+                width: 100%;
+                display: none;
+            }
+            nav.active {
+                display: block;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+                margin-left: 0;
+            }
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>Memory Support</span>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#stories">Stories</a></li>
+                    <li><a href="index.html#tips">Tips</a></li>
+                    <li><a href="index.html#research">Research</a></li>
+                    <li><a href="index.html#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="container">
+            <div class="article-content">
+                <h1>Our 10-Year Alzheimer's Journey</h1>
+                
+                <p>When my mother was first diagnosed with Alzheimer's disease in 2012, our family had little idea what to expect. The doctor explained it was early stage, and we naively thought we had years before any significant changes would occur. The reality was that subtle changes had already begun, and the progression, while gradual, was relentless.</p>
+                
+                <p>The first few years were marked by small forgetfulness - missed appointments, repeating questions, and difficulty finding words. What we didn't anticipate were the personality changes and emotional challenges. My once patient, gentle mother became easily frustrated and sometimes suspicious. Learning to navigate these changes while preserving her dignity became our family's mission.</p>
+                
+                <p>By year five, we needed professional help. We found an amazing day program that gave my mother structure and socialization while giving my father much-needed respite. The middle stages brought new challenges with daily tasks, but also moments of surprising clarity and connection. Now in the later stages, we've learned to cherish every moment of recognition, every smile, and every time she still says our names.</p>
+                
+                <p>This journey has taught us patience, resilience, and the true meaning of unconditional love. While Alzheimer's has taken much from our mother, it hasn't taken away our ability to love her and create meaningful moments together.</p>
+                
+                <a href="index.html#stories" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Stories
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Memory Support</h3>
+                    <p>Providing reliable information and support for families affected by Alzheimer's and dementia.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#stories">Stories</a></li>
+                        <li><a href="index.html#tips">Tips</a></li>
+                        <li><a href="index.html#research">Research</a></li>
+                        <li><a href="index.html#resources">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Alzheimer's Help</h3>
+                    <p><i class="fas fa-phone"></i> 24/7 Helpline: <a href="tel:8002723900">800.272.3900</a></p>
+                    <p><i class="fas fa-info-circle"></i> Available in 200+ languages</p>
+                </div>
+            </div>
+            <p class="copyright">© 2023 Memory Support. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
