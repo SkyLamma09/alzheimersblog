@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memory Lane - A Daughter’s Reflections</title>
+  <title>Memory Lane - The MIND Diet</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -21,6 +21,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       color: #333;
+      line-height: 1.8;
     }
 
     header {
@@ -85,14 +86,128 @@
     .page-title {
       text-align: center;
       color: var(--secondary);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--light);
     }
 
     .content {
       max-width: 800px;
       margin: 0 auto;
       font-size: 1.1rem;
-      line-height: 1.8;
+    }
+    
+    .content p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .content h2 {
+      color: var(--secondary);
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .content ul {
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+    }
+    
+    .content li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .highlight-box {
+      background-color: rgba(255, 126, 95, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .diet-list {
+      counter-reset: diet-counter;
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .diet-list li {
+      counter-increment: diet-counter;
+      margin-bottom: 1.5rem;
+      padding-left: 2.5rem;
+      position: relative;
+    }
+    
+    .diet-list li::before {
+      content: counter(diet-counter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: var(--primary);
+      color: white;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .references {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray);
+    }
+
+    .references h2 {
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .reference-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .reference-list li {
+      margin-bottom: 1.5rem;
+      text-indent: -36px;
+      padding-left: 36px;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    .reference-list a {
+      color: var(--primary);
+      word-break: break-all;
+      text-decoration: none;
+    }
+
+    .reference-list a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+      }
+      
+      nav ul li {
+        margin: 0 0.75rem;
+      }
+
+      .reference-list li {
+        text-indent: -28px;
+        padding-left: 28px;
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
@@ -116,11 +231,48 @@
 
   <main>
     <div class="container">
-      <h1 class="page-title">A Daughter’s Reflections</h1>
+      <h1 class="page-title">The MIND Diet: Fighting Alzheimer's Through Nutrition</h1>
       <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat diam vitae nisl dapibus, ut dictum nulla cursus. Morbi volutpat ultrices quam, sed dignissim arcu tincidunt sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p>One of the best ways to combat Alzheimer's is through lifestyle changes, and this includes changing your diet. Diet consumption plays an important role in cognitive function and development, with a systematic review finding that consumption of ultra-processed foods has a direct correlation to a higher risk percentage for Alzheimer's (Claudino et al., 2024).</p>
 
-        <p>Curabitur pretium faucibus sem, at fermentum enim pharetra in. Proin tincidunt orci vel risus accumsan, at tincidunt justo euismod. Etiam consequat congue augue, vitae bibendum libero gravida vel. Quisque sed sapien non mauris rutrum condimentum.</p>
+        <div class="highlight-box">
+          <p>To create a diet that can help slow down cognitive decline, the director of the Rush Institute of Healthy Aging, Martha Clare Morris, developed the MIND diet based on research linking certain foods to improved cognitive function and brain health.</p>
+        </div>
+
+        <h2>What is the MIND Diet?</h2>
+        <p>The MIND diet stands for Mediterranean-DASH Intervention for Neurodegenerative Delay. It combines elements from the Mediterranean and DASH (Dietary Approaches to Stop Hypertension) diets, both of which have shown benefits for brain health.</p>
+
+        <h2>Effectiveness of the MIND Diet</h2>
+        <p>Research published in Scientific Reports found that the MIND diet intervention resulted in measurable changes in brain structure, including "an increase in surface area of the inferior frontal gyrus" (Arjmand et al., 2022). This shows that the MIND Diet is effective in fighting cognitive decline by promoting brain growth.</p>
+
+        <h2>The 5 Key Components of the MIND Diet</h2>
+        <ol class="diet-list">
+          <li><strong>Omega-3 Fats:</strong> Found in fatty fish like salmon and in nuts, these healthy fats are essential for brain health and reducing inflammation.</li>
+          <li><strong>Vegetables & Leafy Greens:</strong> These provide increased fiber intake and antioxidants that help reduce oxidative stress in the brain.</li>
+          <li><strong>Whole Grains:</strong> Foods like quinoa, brown rice, and whole wheat are essential for B vitamins and other minerals that support cognitive function.</li>
+          <li><strong>Beans & Legumes:</strong> These plant-based proteins support a healthy heart, which is closely linked to brain health.</li>
+          <li><strong>Olive Oil:</strong> A primary source of healthy monounsaturated fats that support overall brain function and vascular health.</li>
+        </ol>
+
+        <h2>Additional Benefits</h2>
+        <p>The MIND diet also emphasizes:</p>
+        <ul>
+          <li>Berries (especially blueberries and strawberries) for their high antioxidant content</li>
+          <li>Poultry as a lean protein source</li>
+          <li>Limited intake of red meat, butter/margarine, cheese, pastries/sweets, and fried/fast food</li>
+        </ul>
+
+        <div class="highlight-box">
+          <p>Studies suggest that even moderate adherence to the MIND diet may reduce the risk of Alzheimer's disease by up to 35%, while strict adherence may reduce risk by up to 53%.</p>
+        </div>
+
+        <section class="references">
+          <h2>Works Cited</h2>
+          <ol class="reference-list">
+            <li>Claudino, P. A., Bueno, N. B., Piloneto, S., Halaiko, D., De Sousa, L. P. A., Maia, C. H. B. J., & Netto, B. D. M. (2024). Consumption of ultra-processed foods and risk for Alzheimer's disease: a systematic review. <i>Frontiers in Nutrition, 10</i>. <a href="https://doi.org/10.3389/fnut.2023.1288749">https://doi.org/10.3389/fnut.2023.1288749</a></li>
+            <li>Arjmand, G., Abbas-Zadeh, M., & Eftekhari, M. H. (2022). Effect of MIND diet intervention on cognitive performance and brain structure in healthy obese women: a randomized controlled trial. <i>Scientific Reports, 12</i>(1). <a href="https://doi.org/10.1038/s41598-021-04258-9">https://doi.org/10.1038/s41598-021-04258-9</a></li>
+          </ol>
+        </section>
       </div>
     </div>
   </main>
