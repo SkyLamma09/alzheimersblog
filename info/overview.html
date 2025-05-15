@@ -1,66 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Understanding Alzheimer's | Memory Lane</title>
-    <!-- Use the same CSS as your index.html -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Alzheimers</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --primary: #4a6fa5;
+      --secondary: #166088;
+      --accent: #ff7e5f;
+      --light: #f8f9fa;
+      --dark: #343a40;
+      --gray: #6c757d;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      width: 85%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    .logo i {
+      margin-right: 10px;
+      color: var(--accent);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      padding: 2rem 0;
+    }
+
+    .page-title {
+      text-align: center;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <!-- Same header as index.html -->
-        <div class="container header-content">
-            <a href="index.html" class="logo">
-                <i class="fas fa-brain"></i>
-                <span>Memory Lane</span>
-            </a>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html#stories">Stories</a></li>
-                    <li><a href="index.html#tips">Tips</a></li>
-                    <li><a href="index.html#research">Research</a></li>
-                    <li><a href="index.html#resources">Resources</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container header-content">
+      <a href="../index.html" class="logo">
+        <i class="fas fa-brain"></i>
+        <span>Memory Lane</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../index.html#stories">Stories</a></li>
+          <li><a href="../index.html#tips">Tips</a></li>
+          <li><a href="../index.html#research">Research</a></li>
+          <li><a href="../index.html#resources">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main class="main article-page">
-        <div class="container">
-            <article>
-                <h1>Understanding Alzheimer's Disease</h1>
-                <div class="article-meta">Posted on May 14, 2025</div>
-                
-                <img src="https://images.unsplash.com/photo-1588776814546-ec47c33ed78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Brain illustration" class="featured-image">
-                
-                <div class="article-content">
-                    <h2>What is Alzheimer's Disease?</h2>
-                    <p>Alzheimer's disease is a progressive neurological disorder that causes brain cells to degenerate and die, leading to memory loss and cognitive decline.</p>
-                    
-                    <h2>Symptoms and Stages</h2>
-                    <p>Early symptoms include difficulty remembering recent events or conversations. As the disease progresses, symptoms become more severe.</p>
-                    
-                    <h2>Current Research</h2>
-                    <p>Researchers are working to understand the causes of Alzheimer's and develop treatments to stop or slow its progression.</p>
-                </div>
-                
-                <a href="index.html" class="btn">Back to Home</a>
-            </article>
-        </div>
-    </main>
+  <main>
+    <div class="container">
+      <h1 class="page-title">Understanding Alzheimers</h1>
+      <div class="content">
+        <p>Alzheimer’s disease is a progressive neurological disorder that affects numerous cognitive functions such
+as memory, thinking, and behavior. It is the most common cause of dementia, accounting for nearly
+60-80% of dementia cases worldwide (National Library of Medicine). This disease leads to progressive
+decline in cognitive abilities, with it often starting with mild memory loss, such as misplacing frequently
+used items (Clevland Clinic), and can also lead to severe cognitive impairment, which includes even
+forgetting how to walk. (NursePartners). As of today, there is no cure, but with scientists and society
+working together, we can hopefully move towards a day when Alzheimer’s doesn’t exist.
+The symptoms of Alzheimer’s disease develop slowly and worsen over time. They can be represented by
+the 7 stages of Alzheimer's as follows 1. No Impairment → You have no symptoms, and you are functioning normally
+2. Very mild Decline → You might have some slight memory lapses, such as misplacing your keys, and
+this is often not that noticeable
+3. Mild Decline → Friends and family can start to notice your memory issues, and you will likely have
+trouble finding words or remembering names
+4 . Moderate Decline → You’re symptoms are now clear, you are forgetting events that have happened
+recently, and the diagnosis of Alzheimer’s disease is a possibility. You can also lose awareness of time
+5. Moderate to Severe Decline → You need help with daily activities such as choosing clothes, and you
+can no longer live independently as your memory and communication skills deteriorate. This stage
+usually lasts around 1 - 1.5 years.
+6. Severe Decline → Your memory is severely impaired, you can forget the names of your family
+members, have trouble speaking, and even expect some behavioral changes.
+7. Very Severe Decline → You are in the last stage of Alzheimer’s, and you have lost your ability to
+respond, speak, or even control how you move. You need 24/7 surveillance and care. At this stage, some
+people may even be bedridden or infantile.
+The exact cause of Alzheimer's disease remains unclear, but as of now, scientists believe that there are
+multiple factors, such as genetics, environmental factors, and lifestyle quality. Two hallmarks of
+Alzheimer’s disease are the accumulation of two abnormal protein deposits in the brain, which include
+amyloid plaques and tau tangles. These abnormalities can disrupt communication between different brain
+cells, leading to death.
+Several Risk Factors Include →
+1. Age: Age is the most significant risk factor because most people with Alzheimer’s are 65 or older,
+with the risk increasing significantly after each passing decade after 65. (Alzheimer’s Society)
+2. Genetics: Family history can play a role in determining whether or not you are prone to
+Alzheimer's. Certain genes, especially the APOE ε4 gene, are linked to an increased risk of
+Alzheimer's, although not everyone with this gene will develop Alzheimer’s (National Institute
+of Aging)
+3. Heart health and Lifestyle factors: Having heart and blood-related problems, such as high blood
+pressure, heart disease, and excess cholesterol, can all increase the risk of developing
+alzheimers.This is caused by a bad lifestyle which includes, lack of physical activity, poor diet,
+smoking, and even social isolation.
+While there is no cure for Alzheimer's yet, there are numerous ways people can help those affected by the
+disease, as well as contribute to research efforts.
+1. Support Caregivers: Caregiving for someone with Alzheimer’s is an exhausting job. Offering
+respite care by giving them time to rest, helping with household chores, or even just simply
+providing emotional support can make a huge difference.
+2. Raising Awareness: Educating others is important, including about the disease’s symptoms, and
+how to provide support. This can help reduce stigma and encourage more people to seek early
+diagnosis and treatment.
+3. Contributing to research: Financial support for Alzheimer’s research can help the discovery of
+new treatment options, improve early detection, and ultimately find a cure. Many organizations,
+such as the Alzheimer’s Association and Alzheimer’s Research UK, are dedicated to funding
+research.
+Alzheimers disease is a cruel disease that affects millions across borders. While we don’t have a cure right
+now, with more people being aware of this disease, we will have already moved one step closer in the
+mission to find a cure for this disease.</p>
 
-    <!-- Same footer/resources section as index.html if needed -->
-
-    <script>
-        // Same JavaScript as index.html
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('nav').classList.toggle('active');
-        });
-    </script>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
