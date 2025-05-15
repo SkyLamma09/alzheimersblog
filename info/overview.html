@@ -153,6 +153,40 @@
       justify-content: center;
       font-weight: bold;
     }
+
+    .references {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray);
+    }
+
+    .references h2 {
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .reference-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .reference-list li {
+      margin-bottom: 1.5rem;
+      text-indent: -36px;
+      padding-left: 36px;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    .reference-list a {
+      color: var(--primary);
+      word-break: break-all;
+      text-decoration: none;
+    }
+
+    .reference-list a:hover {
+      text-decoration: underline;
+    }
     
     @media (max-width: 768px) {
       .header-content {
@@ -167,6 +201,12 @@
       
       nav ul li {
         margin: 0 0.75rem;
+      }
+
+      .reference-list li {
+        text-indent: -28px;
+        padding-left: 28px;
+        font-size: 0.85rem;
       }
     }
   </style>
@@ -241,6 +281,18 @@
         </div>
 
         <p>Alzheimer's disease affects millions worldwide. While a cure doesn't yet exist, increased awareness and research funding bring us closer to effective treatments and ultimately, a cure.</p>
+
+        <section class="references">
+          <h2>References</h2>
+          <ol class="reference-list">
+            <li>2024 Alzheimer's disease facts and figures. (2024). <i>Alzheimer's & Dementia, 20</i>(5), 3708–3821. <a href="https://doi.org/10.1002/alz.13809">https://doi.org/10.1002/alz.13809</a></li>
+            <li>Mild cognitive impairment. (2025, April 21). <i>Cleveland Clinic.</i> <a href="https://my.clevelandclinic.org/health/diseases/17990-mild-cognitive-impairment">https://my.clevelandclinic.org/health/diseases/17990-mild-cognitive-impairment</a></li>
+            <li>Abraldes, P. R. (2022, June 8). Alzheimer's disease and the Ability to Walk. <i>NursePartners US.</i> <a href="https://www.nursepartners.org/alzheimers-ability-walk/">https://www.nursepartners.org/alzheimers-ability-walk/</a></li>
+            <li>Risk factors for Alzheimer's disease. (2023, April 13). <i>Alzheimer's Society.</i> <a href="https://www.alzheimers.org.uk/about-dementia/types-dementia/who-gets-alzheimers-disease">https://www.alzheimers.org.uk/about-dementia/types-dementia/who-gets-alzheimers-disease</a></li>
+            <li>Alzheimer's Disease Genetics Fact Sheet. (2023, March 1). <i>National Institute on Aging.</i> <a href="https://www.nia.nih.gov/health/alzheimers-causes-and-risk-factors/alzheimers-disease-genetics-fact-sheet">https://www.nia.nih.gov/health/alzheimers-causes-and-risk-factors/alzheimers-disease-genetics-fact-sheet</a></li>
+            <li>Hakim, A., Ng, N., & Turek, N. (2013). Heart disease as a risk factor for dementia. <i>Clinical Epidemiology, 5</i>, 135. <a href="https://doi.org/10.2147/clep.s30621">https://doi.org/10.2147/clep.s30621</a></li>
+          </ol>
+        </section>
       </div>
     </div>
   </main>
