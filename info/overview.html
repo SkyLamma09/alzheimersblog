@@ -21,6 +21,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       color: #333;
+      line-height: 1.8;
     }
 
     header {
@@ -85,14 +86,88 @@
     .page-title {
       text-align: center;
       color: var(--secondary);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--light);
     }
 
     .content {
       max-width: 800px;
       margin: 0 auto;
       font-size: 1.1rem;
-      line-height: 1.8;
+    }
+    
+    .content p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .content h2 {
+      color: var(--secondary);
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .content ul {
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+    }
+    
+    .content li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .highlight-box {
+      background-color: rgba(255, 126, 95, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .stage-list {
+      counter-reset: stage-counter;
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .stage-list li {
+      counter-increment: stage-counter;
+      margin-bottom: 1.5rem;
+      padding-left: 2.5rem;
+      position: relative;
+    }
+    
+    .stage-list li::before {
+      content: counter(stage-counter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: var(--primary);
+      color: white;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+      }
+      
+      nav ul li {
+        margin: 0 0.75rem;
+      }
     }
   </style>
 </head>
@@ -118,61 +193,54 @@
     <div class="container">
       <h1 class="page-title">Understanding Alzheimers</h1>
       <div class="content">
-        <p>Alzheimer’s disease is a progressive neurological disorder that affects numerous cognitive functions such
-as memory, thinking, and behavior. It is the most common cause of dementia, accounting for nearly
-60-80% of dementia cases worldwide (National Library of Medicine). This disease leads to progressive
-decline in cognitive abilities, with it often starting with mild memory loss, such as misplacing frequently
-used items (Clevland Clinic), and can also lead to severe cognitive impairment, which includes even
-forgetting how to walk. (NursePartners). As of today, there is no cure, but with scientists and society
-working together, we can hopefully move towards a day when Alzheimer’s doesn’t exist.
-The symptoms of Alzheimer’s disease develop slowly and worsen over time. They can be represented by
-the 7 stages of Alzheimer's as follows 1. No Impairment → You have no symptoms, and you are functioning normally
-2. Very mild Decline → You might have some slight memory lapses, such as misplacing your keys, and
-this is often not that noticeable
-3. Mild Decline → Friends and family can start to notice your memory issues, and you will likely have
-trouble finding words or remembering names
-4 . Moderate Decline → You’re symptoms are now clear, you are forgetting events that have happened
-recently, and the diagnosis of Alzheimer’s disease is a possibility. You can also lose awareness of time
-5. Moderate to Severe Decline → You need help with daily activities such as choosing clothes, and you
-can no longer live independently as your memory and communication skills deteriorate. This stage
-usually lasts around 1 - 1.5 years.
-6. Severe Decline → Your memory is severely impaired, you can forget the names of your family
-members, have trouble speaking, and even expect some behavioral changes.
-7. Very Severe Decline → You are in the last stage of Alzheimer’s, and you have lost your ability to
-respond, speak, or even control how you move. You need 24/7 surveillance and care. At this stage, some
-people may even be bedridden or infantile.
-The exact cause of Alzheimer's disease remains unclear, but as of now, scientists believe that there are
-multiple factors, such as genetics, environmental factors, and lifestyle quality. Two hallmarks of
-Alzheimer’s disease are the accumulation of two abnormal protein deposits in the brain, which include
-amyloid plaques and tau tangles. These abnormalities can disrupt communication between different brain
-cells, leading to death.
-Several Risk Factors Include →
-1. Age: Age is the most significant risk factor because most people with Alzheimer’s are 65 or older,
-with the risk increasing significantly after each passing decade after 65. (Alzheimer’s Society)
-2. Genetics: Family history can play a role in determining whether or not you are prone to
-Alzheimer's. Certain genes, especially the APOE ε4 gene, are linked to an increased risk of
-Alzheimer's, although not everyone with this gene will develop Alzheimer’s (National Institute
-of Aging)
-3. Heart health and Lifestyle factors: Having heart and blood-related problems, such as high blood
-pressure, heart disease, and excess cholesterol, can all increase the risk of developing
-alzheimers.This is caused by a bad lifestyle which includes, lack of physical activity, poor diet,
-smoking, and even social isolation.
-While there is no cure for Alzheimer's yet, there are numerous ways people can help those affected by the
-disease, as well as contribute to research efforts.
-1. Support Caregivers: Caregiving for someone with Alzheimer’s is an exhausting job. Offering
-respite care by giving them time to rest, helping with household chores, or even just simply
-providing emotional support can make a huge difference.
-2. Raising Awareness: Educating others is important, including about the disease’s symptoms, and
-how to provide support. This can help reduce stigma and encourage more people to seek early
-diagnosis and treatment.
-3. Contributing to research: Financial support for Alzheimer’s research can help the discovery of
-new treatment options, improve early detection, and ultimately find a cure. Many organizations,
-such as the Alzheimer’s Association and Alzheimer’s Research UK, are dedicated to funding
-research.
-Alzheimers disease is a cruel disease that affects millions across borders. While we don’t have a cure right
-now, with more people being aware of this disease, we will have already moved one step closer in the
-mission to find a cure for this disease.</p>
+        <p>Alzheimer's disease is a progressive neurological disorder that affects numerous cognitive functions such as memory, thinking, and behavior. It is the most common cause of dementia, accounting for nearly 60-80% of dementia cases worldwide (National Library of Medicine).</p>
 
+        <div class="highlight-box">
+          <p>This disease leads to progressive decline in cognitive abilities, often starting with mild memory loss (such as misplacing frequently used items) and potentially progressing to severe cognitive impairment that affects basic functions.</p>
+        </div>
+
+        <h2>Symptoms and Stages</h2>
+        <p>The symptoms of Alzheimer's disease develop slowly and worsen over time. They can be represented by the 7 stages of Alzheimer's:</p>
+        
+        <ol class="stage-list">
+          <li><strong>No Impairment:</strong> No symptoms, normal functioning</li>
+          <li><strong>Very Mild Decline:</strong> Slight memory lapses (e.g., misplacing keys), often not noticeable</li>
+          <li><strong>Mild Decline:</strong> Friends/family notice memory issues, trouble finding words or remembering names</li>
+          <li><strong>Moderate Decline:</strong> Clear symptoms emerge - forgetting recent events, losing awareness of time</li>
+          <li><strong>Moderate to Severe Decline:</strong> Needs help with daily activities, can't live independently (lasts ~1-1.5 years)</li>
+          <li><strong>Severe Decline:</strong> Severe memory impairment, trouble recognizing family, speech difficulties, behavioral changes</li>
+          <li><strong>Very Severe Decline:</strong> Loses ability to respond, speak, or control movement - requires 24/7 care</li>
+        </ol>
+
+        <h2>Causes and Risk Factors</h2>
+        <p>The exact cause remains unclear, but scientists believe multiple factors contribute including genetics, environment, and lifestyle. Two key biological markers are:</p>
+        
+        <ul>
+          <li><strong>Amyloid plaques:</strong> Abnormal protein clusters between nerve cells</li>
+          <li><strong>Tau tangles:</strong> Twisted protein fibers within brain cells</li>
+        </ul>
+
+        <p>These disrupt brain cell communication and lead to cell death. Major risk factors include:</p>
+        
+        <ul>
+          <li><strong>Age:</strong> Most significant risk factor - majority of cases occur after 65 (Alzheimer's Society)</li>
+          <li><strong>Genetics:</strong> Family history and certain genes (like APOE ε4) increase risk (National Institute of Aging)</li>
+          <li><strong>Heart health:</strong> Conditions like high blood pressure, heart disease, and high cholesterol</li>
+          <li><strong>Lifestyle factors:</strong> Poor diet, lack of exercise, smoking, and social isolation</li>
+        </ul>
+
+        <h2>How You Can Help</h2>
+        <p>While there's currently no cure, there are meaningful ways to support those affected and contribute to research:</p>
+        
+        <div class="highlight-box">
+          <ul>
+            <li><strong>Support caregivers:</strong> Offer respite care, help with chores, or emotional support</li>
+            <li><strong>Raise awareness:</strong> Educate others about symptoms and support options to reduce stigma</li>
+            <li><strong>Contribute to research:</strong> Support organizations like Alzheimer's Association and Alzheimer's Research UK</li>
+          </ul>
+        </div>
+
+        <p>Alzheimer's disease affects millions worldwide. While a cure doesn't yet exist, increased awareness and research funding bring us closer to effective treatments and ultimately, a cure.</p>
       </div>
     </div>
   </main>
