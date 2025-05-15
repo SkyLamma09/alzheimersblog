@@ -15,300 +15,326 @@
             --gray: #6c757d;
         }
 
-```
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    body {
-        background-color: #f5f7fa;
-        color: #333;
-        line-height: 1.6;
-    }
-    
-    header {
-        background: linear-gradient(135deg, var(--primary), var(--secondary));
-        color: white;
-        padding: 1rem 0;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    
-    .container {
-        width: 85%;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    
-    .header-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .logo {
-        font-size: 1.8rem;
-        font-weight: 700;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .logo i {
-        margin-right: 10px;
-        color: var(--accent);
-    }
-    
-    nav ul {
-        display: flex;
-        list-style: none;
-    }
-    
-    nav ul li {
-        margin-left: 1.5rem;
-    }
-    
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-weight: 500;
-        transition: all 0.3s ease;
-    }
-    
-    nav ul li a:hover {
-        color: var(--accent);
-    }
-    
-    .hero {
-        background: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
-    
-    .hero::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.5);
-    }
-    
-    .hero-content {
-        position: relative;
-        z-index: 1;
-        color: white;
-        max-width: 600px;
-    }
-    
-    .hero h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .hero p {
-        font-size: 1.1rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .btn {
-        display: inline-block;
-        background: var(--accent);
-        color: white;
-        padding: 0.7rem 1.5rem;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: all 0.3s ease;
-    }
-    
-    .btn:hover {
-        background: #e86a4a;
-        transform: translateY(-2px);
-    }
-    
-    .main {
-        padding: 3rem 0;
-    }
-    
-    .section-title {
-        text-align: center;
-        margin-bottom: 2rem;
-        color: var(--secondary);
-    }
-    
-    .blog-posts {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 2rem;
-        margin-bottom: 3rem;
-    }
-    
-    .post-card {
-        background: white;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
-    }
-    
-    .post-card:hover {
-        transform: translateY(-10px);
-    }
-    
-    .post-img {
-        height: 200px;
-        overflow: hidden;
-    }
-    
-    .post-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-    }
-    
-    .post-card:hover .post-img img {
-        transform: scale(1.1);
-    }
-    
-    .post-content {
-        padding: 1.5rem;
-    }
-    
-    .post-date {
-        color: var(--gray);
-        font-size: 0.9rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .post-title {
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-        color: var(--dark);
-    }
-    
-    .post-excerpt {
-        color: var(--gray);
-        margin-bottom: 1.5rem;
-    }
-    
-    .read-more {
-        color: var(--primary);
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-flex;
-        align-items: center;
-    }
-    
-    .read-more i {
-        margin-left: 5px;
-        transition: transform 0.3s ease;
-    }
-    
-    .read-more:hover i {
-        transform: translateX(5px);
-    }
-    
-    .resources {
-        background: var(--light);
-        padding: 3rem 0;
-    }
-    
-    .resource-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 1.5rem;
-    }
-    
-    .resource-card {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 8px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        text-align: center;
-        transition: all 0.3s ease;
-    }
-    
-    .resource-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-    
-    .resource-icon {
-        font-size: 2.5rem;
-        color: var(--primary);
-        margin-bottom: 1rem;
-    }
-    
-    .resource-title {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-        color: var(--dark);
-    }
-    
-    /* Mobile menu */
-    .menu-toggle {
-        display: none;
-        cursor: pointer;
-        font-size: 1.5rem;
-    }
-    
-    @media (max-width: 768px) {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
         .header-content {
-            flex-direction: column;
-            align-items: flex-start;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
         .logo {
-            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
         }
         
-        nav {
-            width: 100%;
-            display: none;
-        }
-        
-        nav.active {
-            display: block;
+        .logo i {
+            margin-right: 10px;
+            color: var(--accent);
         }
         
         nav ul {
-            flex-direction: column;
+            display: flex;
+            list-style: none;
         }
         
         nav ul li {
-            margin: 0.5rem 0;
+            margin-left: 1.5rem;
         }
         
-        .menu-toggle {
-            display: block;
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+        
+        .hero {
+            background: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
             position: absolute;
-            top: 1rem;
-            right: 1rem;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
         }
         
         .hero-content {
-            padding: 0 1rem;
+            position: relative;
+            z-index: 1;
+            color: white;
+            max-width: 600px;
         }
         
         .hero h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
-    }
-</style>
-```
-
+        
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #e86a4a;
+            transform: translateY(-2px);
+        }
+        
+        .main {
+            padding: 3rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--secondary);
+        }
+        
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .post-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .post-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .post-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .post-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .post-card:hover .post-img img {
+            transform: scale(1.1);
+        }
+        
+        .post-content {
+            padding: 1.5rem;
+        }
+        
+        .post-date {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .post-excerpt {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+        
+        .read-more {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .read-more i {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .read-more:hover i {
+            transform: translateX(5px);
+        }
+        
+        .resources {
+            background: var(--light);
+            padding: 3rem 0;
+        }
+        
+        .resource-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .resource-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .resource-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .resource-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        /* Featured post styles */
+        .featured-post {
+            grid-column: 1 / -1;
+            display: flex;
+            margin-bottom: 2rem;
+        }
+        
+        .featured-post .post-img {
+            flex: 1;
+            height: auto;
+        }
+        
+        .featured-post .post-content {
+            flex: 1;
+            padding: 2rem;
+        }
+        
+        .featured-post .post-img img {
+            height: 100%;
+        }
+        
+        /* Mobile menu */
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+            
+            nav {
+                width: 100%;
+                display: none;
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+            
+            .hero-content {
+                padding: 0 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            /* Mobile styles for featured post */
+            .featured-post {
+                flex-direction: column;
+            }
+            
+            .featured-post .post-img {
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 <body>
-
     <header>
         <div class="container header-content">
             <a href="index.html" class="logo">
@@ -329,213 +355,207 @@
         </div>
     </header>
 
-```
-<section class="hero">
-    <div class="container hero-content">
-        <h1>Jonathan and Bhanu's project on Alzheimers</h1>
-        <p>Find stories, tips, and updates on Alzheimers research here.</p>
-        <a href="https://www.alz.org" target="_blank" rel="noopener noreferrer" class="btn">Get Support Now</a>
-    </div>
-</section>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Jonathan and Bhanu's project on Alzheimers</h1>
+            <p>Find stories, tips, and updates on Alzheimers research here.</p>
+            <a href="https://www.alz.org" target="_blank" rel="noopener noreferrer" class="btn">Get Support Now</a>
+        </div>
+    </section>
 
-<main class="main">
-    <div class="container">
-        <h2 class="section-title" id="stories">Personal Stories</h2>
-        <div class="blog-posts">
-            <section class="main" id="alz-info">
-                <div class="container">
-                    <h2 class="section-title">Information about Alzheimer's</h2>
-                    <div class="blog-posts">
-                        <article class="post-card">
-                            <div class="post-img">
-                                <img src="https://images.unsplash.com/photo-1588776814546-ec47c33ed78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Brain illustration">
-                            </div>
-                            <div class="post-content">
-                                <div class="post-date">May 14, 2025</div>
-                                <h3 class="post-title">Understanding Alzheimer's Disease</h3>
-                                <p class="post-excerpt">Alzheimer’s is a progressive neurological disorder that affects memory, thinking, and behavior. Learn more about the symptoms, stages, and current research.</p>
-                                <a href="info/alzheimers-overview.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </article>
+    <main class="main">
+        <div class="container">
+            <h2 class="section-title" id="stories">Personal Stories</h2>
+            
+            <!-- Featured wide horizontal post -->
+            <article class="post-card featured-post">
+                <div class="post-img">
+                    <img src="https://images.unsplash.com/photo-1588776814546-ec47c33ed78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Brain illustration">
+                </div>
+                <div class="post-content">
+                    <div class="post-date">May 14, 2025</div>
+                    <h3 class="post-title">Understanding Alzheimer's Disease</h3>
+                    <p class="post-excerpt">Alzheimer's is a progressive neurological disorder that affects memory, thinking, and behavior. Learn more about the symptoms, stages, and current research.</p>
+                    <a href="info/alzheimers-overview.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <!-- Regular vertical posts -->
+            <div class="blog-posts">
+                <article class="post-card">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Elderly couple holding hands">
                     </div>
-                </div>
-            </section>
-            <article class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Elderly couple holding hands">
-                </div>
-                <div class="post-content">
-                    <div class="post-date">June 15, 2023</div>
-                    <h3 class="post-title">10-Year Alzheimer's Journey</h3>
-                    <p class="post-excerpt">A family shares their decade-long experience caring for a loved one through all stages of Alzheimer's.</p>
-                    <a href="stories/story1.html" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Caregiver helping senior">
-                </div>
-                <div class="post-content">
-                    <div class="post-date">June 8, 2023</div>
-                    <h3 class="post-title">Finding Joy in Small Moments</h3>
-                    <p class="post-excerpt">Discover how one couple maintains connection through sensory experiences.</p>
-                    <a href="stories/story2.html" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Family together">
-                </div>
-                <div class="post-content">
-                    <div class="post-date">May 30, 2023</div>
-                    <h3 class="post-title">Explaining to Children</h3>
-                    <p class="post-excerpt">How to help kids understand and connect with a grandparent who has dementia.</p>
-                    <a href="stories/story3.html" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-        </div>
-    </div>
-</main>
-
-<section class="main" id="tips">
-    <div class="container">
-        <h2 class="section-title">Caregiving Tips</h2>
-        <div class="blog-posts">
-            <article class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Communication">
-                </div>
-                <div class="post-content">
-                    <h3 class="post-title">Communication Strategies</h3>
-                    <p class="post-excerpt">Learn techniques to improve interactions with your loved one as their Alzheimer's progresses.</p>
-                    <a href="tips/tip1.html" class="read-more">Read Tips <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Home safety">
-                </div>
-                <div class="post-content">
-                    <h3 class="post-title">Home Safety Modifications</h3>
-                    <p class="post-excerpt">Essential changes to make your home safer for someone with memory impairment.</p>
-                    <a href="tips/tip2.html" class="read-more">Read Tips <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Nutrition">
-                </div>
-                <div class="post-content">
-                    <h3 class="post-title">Nutrition & Meal Strategies</h3>
-                    <p class="post-excerpt">How to address common eating challenges and ensure proper nutrition.</p>
-                    <a href="tips/tip3.html" class="read-more">Read Tips <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-
-<section class="main" id="research">
-    <div class="container">
-        <h2 class="section-title">Latest Research</h2>
-        <div class="blog-posts">
-            <article class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1579165466741-0d321db17c75?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Research lab">
-                </div>
-                <div class="post-content">
-                    <h3 class="post-title">Early Detection Breakthroughs</h3>
-                    <p class="post-excerpt">Exploring the latest biomarkers and imaging techniques for earlier Alzheimer's detection.</p>
-                    <a href="research/research1.html" class="read-more">Read Study <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Clinical trial">
-                </div>
-                <div class="post-content">
-                    <h3 class="post-title">Promising Clinical Trials</h3>
-                    <p class="post-excerpt">An overview of current Alzheimer's drug trials showing potential to slow progression.</p>
-                    <a href="research/research2.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Lifestyle">
-                </div>
-                <div class="post-content">
-                    <h3 class="post-title">Lifestyle & Risk Reduction</h3>
-                    <p class="post-excerpt">New findings on how diet, exercise, and cognitive activities may impact Alzheimer's risk.</p>
-                    <a href="research/research3.html" class="read-more">Read Findings <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-
-<section class="resources" id="resources">
-    <div class="container">
-        <h2 class="section-title">Helpful Resources</h2>
-        <div class="resource-cards">
-            <div class="resource-card">
-                <div class="resource-icon">
-                    <i class="fas fa-book-open"></i>
-                </div>
-                <h3 class="resource-title">Educational Materials</h3>
-                <p>Download our free guides about Alzheimer's stages, caregiving, and more.</p>
-            </div>
-            
-            <div class="resource-card">
-                <div class="resource-icon">
-                    <i class="fas fa-hands-helping"></i>
-                </div>
-                <h3 class="resource-title">Support Groups</h3>
-                <p>Connect with others who understand what you're going through.</p>
-            </div>
-            
-            <div class="resource-card">
-                <div class="resource-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <h3 class="resource-title">Local Services</h3>
-                <p>Find care facilities, doctors, and support services in your area.</p>
-            </div>
-            
-            <div class="resource-card">
-                <div class="resource-icon">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <h3 class="resource-title">Get Involved</h3>
-                <p>Learn how you can help raise awareness and funds for research.</p>
+                    <div class="post-content">
+                        <div class="post-date">June 15, 2023</div>
+                        <h3 class="post-title">10-Year Alzheimer's Journey</h3>
+                        <p class="post-excerpt">A family shares their decade-long experience caring for a loved one through all stages of Alzheimer's.</p>
+                        <a href="stories/story1.html" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Caregiver helping senior">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-date">June 8, 2023</div>
+                        <h3 class="post-title">Finding Joy in Small Moments</h3>
+                        <p class="post-excerpt">Discover how one couple maintains connection through sensory experiences.</p>
+                        <a href="stories/story2.html" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Family together">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-date">May 30, 2023</div>
+                        <h3 class="post-title">Explaining to Children</h3>
+                        <p class="post-excerpt">How to help kids understand and connect with a grandparent who has dementia.</p>
+                        <a href="stories/story3.html" class="read-more">Read Story <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
         </div>
-    </div>
-</section>
+    </main>
 
-<script>
-    // Mobile menu toggle
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-        document.querySelector('nav').classList.toggle('active');
-    });
-    
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+    <section class="main" id="tips">
+        <div class="container">
+            <h2 class="section-title">Caregiving Tips</h2>
+            <div class="blog-posts">
+                <article class="post-card">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Communication">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">Communication Strategies</h3>
+                        <p class="post-excerpt">Learn techniques to improve interactions with your loved one as their Alzheimer's progresses.</p>
+                        <a href="tips/tip1.html" class="read-more">Read Tips <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Home safety">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">Home Safety Modifications</h3>
+                        <p class="post-excerpt">Essential changes to make your home safer for someone with memory impairment.</p>
+                        <a href="tips/tip2.html" class="read-more">Read Tips <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Nutrition">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">Nutrition & Meal Strategies</h3>
+                        <p class="post-excerpt">How to address common eating challenges and ensure proper nutrition.</p>
+                        <a href="tips/tip3.html" class="read-more">Read Tips <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="main" id="research">
+        <div class="container">
+            <h2 class="section-title">Latest Research</h2>
+            <div class="blog-posts">
+                <article class="post-card">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1579165466741-0d321db17c75?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Research lab">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">Early Detection Breakthroughs</h3>
+                        <p class="post-excerpt">Exploring the latest biomarkers and imaging techniques for earlier Alzheimer's detection.</p>
+                        <a href="research/research1.html" class="read-more">Read Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Clinical trial">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">Promising Clinical Trials</h3>
+                        <p class="post-excerpt">An overview of current Alzheimer's drug trials showing potential to slow progression.</p>
+                        <a href="research/research2.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-img">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Lifestyle">
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">Lifestyle & Risk Reduction</h3>
+                        <p class="post-excerpt">New findings on how diet, exercise, and cognitive activities may impact Alzheimer's risk.</p>
+                        <a href="research/research3.html" class="read-more">Read Findings <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="resources" id="resources">
+        <div class="container">
+            <h2 class="section-title">Helpful Resources</h2>
+            <div class="resource-cards">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="resource-title">Educational Materials</h3>
+                    <p>Download our free guides about Alzheimer's stages, caregiving, and more.</p>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="resource-title">Support Groups</h3>
+                    <p>Connect with others who understand what you're going through.</p>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="resource-title">Local Services</h3>
+                    <p>Find care facilities, doctors, and support services in your area.</p>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="resource-title">Get Involved</h3>
+                    <p>Learn how you can help raise awareness and funds for research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
-    });
-</script>
-```
-
+    </script>
 </body>
 </html>
