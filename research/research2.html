@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memory Lane - A Daughter’s Reflections</title>
+  <title>Memory Lane - Treatment Breakthroughs</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -21,6 +21,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       color: #333;
+      line-height: 1.8;
     }
 
     header {
@@ -85,14 +86,110 @@
     .page-title {
       text-align: center;
       color: var(--secondary);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--light);
     }
 
     .content {
       max-width: 800px;
       margin: 0 auto;
       font-size: 1.1rem;
-      line-height: 1.8;
+    }
+    
+    .content p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .content h2 {
+      color: var(--secondary);
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .highlight-box {
+      background-color: rgba(255, 126, 95, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .drug-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .drug-list li {
+      margin-bottom: 1.5rem;
+      padding-left: 2rem;
+      position: relative;
+    }
+    
+    .drug-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+    
+    .references {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray);
+    }
+
+    .references h2 {
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .reference-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .reference-list li {
+      margin-bottom: 1.5rem;
+      text-indent: -36px;
+      padding-left: 36px;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    .reference-list a {
+      color: var(--primary);
+      word-break: break-all;
+      text-decoration: none;
+    }
+
+    .reference-list a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+      }
+      
+      nav ul li {
+        margin: 0 0.75rem;
+      }
+
+      .reference-list li {
+        text-indent: -28px;
+        padding-left: 28px;
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
@@ -116,11 +213,63 @@
 
   <main>
     <div class="container">
-      <h1 class="page-title">A Daughter’s Reflections</h1>
+      <h1 class="page-title">Alzheimer's Treatment Breakthroughs</h1>
       <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat diam vitae nisl dapibus, ut dictum nulla cursus. Morbi volutpat ultrices quam, sed dignissim arcu tincidunt sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p>Recent clinical trials have marked a turning point in Alzheimer's disease treatment, with several new drugs demonstrating the ability to slow cognitive decline. These developments reflect a growing arsenal of tools that could fundamentally reshape Alzheimer's care.</p>
 
-        <p>Curabitur pretium faucibus sem, at fermentum enim pharetra in. Proin tincidunt orci vel risus accumsan, at tincidunt justo euismod. Etiam consequat congue augue, vitae bibendum libero gravida vel. Quisque sed sapien non mauris rutrum condimentum.</p>
+        <h2>Anti-Amyloid Therapies</h2>
+        
+        <ul class="drug-list">
+          <li>
+            <strong>Donanemab (Kisunla):</strong> Shows 30-35% reduction in disease progression during early stages, reducing amyloid plaques by 84% over 18 months. Offers patients up to 10 months of extended independent living.
+          </li>
+          <li>
+            <strong>Lecanemab (Leqembi):</strong> Similar efficacy to donanemab, with European regulators approving it after initial doubts about its benefits.
+          </li>
+        </ul>
+
+        <div class="highlight-box">
+          <p>Both donanemab and lecanemab have received regulatory approvals in both the U.S. and Europe, signaling growing global access to these treatments.</p>
+        </div>
+
+        <h2>Repurposed Medications</h2>
+        
+        <ul class="drug-list">
+          <li>
+            <strong>Nucleoside reverse transcriptase inhibitors (NRTIs):</strong> These HIV drugs are now linked to a reduced risk of Alzheimer's, potentially preventing up to 1 million new cases annually.
+          </li>
+          <li>
+            <strong>GLP-1 receptor agonists:</strong> Diabetes medications like semaglutide and liraglutide are under investigation for their neuroprotective benefits.
+          </li>
+        </ul>
+
+        <h2>Emerging Therapies</h2>
+        
+        <ul class="drug-list">
+          <li>
+            <strong>ALZ-801:</strong> An oral drug specifically targeting APOE4 carriers has entered Phase 3 trials with promising results.
+          </li>
+          <li>
+            <strong>Gene and cell therapies:</strong> Experimental treatments like Lomecel-B and SNK01 are showing early potential in reducing cognitive decline.
+          </li>
+          <li>
+            <strong>Non-invasive approaches:</strong> Techniques like transcranial magnetic stimulation are demonstrating benefits in early trials.
+          </li>
+        </ul>
+
+        <section class="references">
+          <h2>References</h2>
+          <ol class="reference-list">
+            <li>Scripps News. (2024, January 31). FDA approves Alzheimer's drug that may slow memory decline in those with disease <a href="https://www.scrippsnews.com/politics/health-care/fda-approves-alzheimers-drug-shown-to-slow-decline-in-memory-cognition-in-those-with-the-disease">https://www.scrippsnews.com/politics/health-care/fda-approves-alzheimers-drug-shown-to-slow-decline-in-memory-cognition-in-those-with-the-disease</a></li>
+            <li>MedPath. (2025, February 13). New analysis shows next-gen Alzheimer's drugs add 8–10 months of independent living <a href="https://trial.medpath.com/news/8fa0e753d710fdcc/new-analysis-shows-next-gen-alzheimer-s-drugs-add-8-10-months-of-independent-living">https://trial.medpath.com/news/8fa0e753d710fdcc/new-analysis-shows-next-gen-alzheimer-s-drugs-add-8-10-months-of-independent-living</a></li>
+            <li>AP News. (2025, April 15). European regulators OK Alzheimer's treatment Leqembi after initial doubts. <a href="https://apnews.com/article/ea22a1f7d4d4e69dfc2a2c94412a6f35">https://apnews.com/article/ea22a1f7d4d4e69dfc2a2c94412a6f35</a></li>
+            <li>New York Post. (2025, May 12). Doctors discover drug already on the market could prevent 1M new cases of Alzheimer's a year. Retrieved from <a href="https://nypost.com/2025/05/12/health/drug-could-prevent-1m-new-alzheimers-cases-a-year-study/">https://nypost.com/2025/05/12/health/drug-could-prevent-1m-new-alzheimers-cases-a-year-study/</a></li>
+            <li>Alzheimer's Association. (2024). Alzheimer's research advances at AAIC 2024. <a href="https://aaic.alz.org/releases-2024/highlights-aaic-2024.asp">https://aaic.alz.org/releases-2024/highlights-aaic-2024.asp</a></li>
+            <li>MedPath. (2025, February 5). Alzheon to present Phase 3 data for novel ApoE4-targeted Alzheimer's pill in April 2025 <a href="https://trial.medpath.com/news/9da97981201d78c5/alzheon-to-present-phase-3-data-for-novel-apoe4-targeted-alzheimer-s-pill-in-april-2025">https://trial.medpath.com/news/9da97981201d78c5/alzheon-to-present-phase-3-data-for-novel-apoe4-targeted-alzheimer-s-pill-in-april-2025</a></li>
+            <li>MedPath. (2024, November 30). Alzheimer's disease: Cell and gene therapy advances in 2024 <a href="https://trial.medpath.com/news/6e186ced3c6f79d9/alzheimer-disease-awareness-month-2024-looking-back-at-a-year-of-progress-in-cell-and">https://trial.medpath.com/news/6e186ced3c6f79d9/alzheimer-disease-awareness-month-2024-looking-back-at-a-year-of-progress-in-cell-and</a></li>
+            <li>BrightFocus Foundation. (2024, October 15). Breaking news dispatch: A non-invasive Alzheimer's treatment, early detection, and more. <a href="https://www.brightfocus.org/news/breaking-news-dispatch-a-non-invasive-alzheimers-treatment-early-detection-and-more">https://www.brightfocus.org/news/breaking-news-dispatch-a-non-invasive-alzheimers-treatment-early-detection-and-more</a></li>
+          </ol>
+        </section>
       </div>
     </div>
   </main>
