@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memory Lane - A Daughter’s Reflections</title>
+  <title>Memory Lane - A Daughter's Reflections</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -21,6 +21,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       color: #333;
+      line-height: 1.8;
     }
 
     header {
@@ -85,14 +86,90 @@
     .page-title {
       text-align: center;
       color: var(--secondary);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--light);
     }
 
     .content {
       max-width: 800px;
       margin: 0 auto;
       font-size: 1.1rem;
-      line-height: 1.8;
+    }
+    
+    .content p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .content h2 {
+      color: var(--secondary);
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .highlight-box {
+      background-color: rgba(255, 126, 95, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .references {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray);
+    }
+
+    .references h2 {
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .reference-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .reference-list li {
+      margin-bottom: 1.5rem;
+      text-indent: -36px;
+      padding-left: 36px;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    .reference-list a {
+      color: var(--primary);
+      word-break: break-all;
+      text-decoration: none;
+    }
+
+    .reference-list a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+      }
+      
+      nav ul li {
+        margin: 0 0.75rem;
+      }
+
+      .reference-list li {
+        text-indent: -28px;
+        padding-left: 28px;
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
@@ -116,11 +193,27 @@
 
   <main>
     <div class="container">
-      <h1 class="page-title">A Daughter’s Reflections</h1>
+      <h1 class="page-title">A Daughter's Reflections</h1>
       <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat diam vitae nisl dapibus, ut dictum nulla cursus. Morbi volutpat ultrices quam, sed dignissim arcu tincidunt sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p>Recent research has revolutionized the early detection of Alzheimer's disease, focusing on non-invasive and highly accurate diagnostic methods. Blood-based biomarkers like p-tau217 and MTBR-tau243 now offer over 90% accuracy in identifying Alzheimer's, making them strong alternatives to spinal taps and costly brain imaging.</p>
 
-        <p>Curabitur pretium faucibus sem, at fermentum enim pharetra in. Proin tincidunt orci vel risus accumsan, at tincidunt justo euismod. Etiam consequat congue augue, vitae bibendum libero gravida vel. Quisque sed sapien non mauris rutrum condimentum.</p>
+        <div class="highlight-box">
+          <p>Sensory testing is also gaining attention—researchers have developed an at-home smell test that can detect early cognitive decline years before symptoms appear. Additionally, studies using near-infrared spectroscopy have revealed that brain oxygenation changes may serve as early neurovascular markers of the disease.</p>
+        </div>
+
+        <h2>The AI Revolution in Diagnosis</h2>
+        <p>Artificial intelligence is being used to analyze cognitive assessments and brain scans to predict Alzheimer's progression with improved sensitivity, marking a new era of accessible and early diagnostics. These technological advances are transforming how we approach Alzheimer's detection, moving us toward more patient-friendly methods that can identify the disease in its earliest stages.</p>
+
+        <section class="references">
+          <h2>References</h2>
+          <ol class="reference-list">
+            <li>Alzheimer's Association. (2024). Alzheimer's disease blood tests could improve diagnosis in primary care. Retrieved from <a href="https://aaic.alz.org/releases-2024/blood-tests-alzheimers-biomarkers.asp">https://aaic.alz.org/releases-2024/blood-tests-alzheimers-biomarkers.asp</a></li>
+            <li>Medical News Today. (2025, March 20). New blood test may help diagnose, show how far Alzheimer's progressed. Retrieved from <a href="https://www.medicalnewstoday.com/articles/new-blood-test-may-help-diagnose-show-how-far-alzheimers-progressed">https://www.medicalnewstoday.com/articles/new-blood-test-may-help-diagnose-show-how-far-alzheimers-progressed</a></li>
+            <li>New York Post. (2025, March 25). At-home smell test could detect Alzheimer's disease years before symptoms start. Retrieved from <a href="https://nypost.com/2025/03/25/health/new-smell-test-could-detect-alzheimers-before-symptoms-start/">https://nypost.com/2025/03/25/health/new-smell-test-could-detect-alzheimers-before-symptoms-start/</a></li>
+            <li>Medscape. (2025). Neurovascular clues offer new path to early Alzheimer's. Retrieved from <a href="https://www.medscape.com/viewarticle/neurovascular-clues-offer-new-path-early-alzheimers-2025a10007gu">https://www.medscape.com/viewarticle/neurovascular-clues-offer-new-path-early-alzheimers-2025a10007gu</a></li>
+            <li>AI Wire. (2024, August 14). Cambridge researchers develop new AI tool for early detection of Alzheimer's disease. Retrieved from <a href="https://www.aiwire.net/2024/08/14/cambridge-researchers-develop-new-ai-tool-for-early-detection-of-alzheimers-disease/">https://www.aiwire.net/2024/08/14/cambridge-researchers-develop-new-ai-tool-for-early-detection-of-alzheimers-disease/</a></li>
+          </ol>
+        </section>
       </div>
     </div>
   </main>
