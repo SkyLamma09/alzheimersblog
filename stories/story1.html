@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memory Lane - A Daughter's Reflection</title>
+  <title>Memory Lane - A Daughter's Reflections</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -21,6 +21,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       color: #333;
+      line-height: 1.8;
     }
 
     header {
@@ -85,14 +86,56 @@
     .page-title {
       text-align: center;
       color: var(--secondary);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--light);
     }
 
     .content {
       max-width: 800px;
       margin: 0 auto;
       font-size: 1.1rem;
-      line-height: 1.8;
+    }
+    
+    .content p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .highlight-box {
+      background-color: rgba(255, 126, 95, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 4px 4px 0;
+      font-style: italic;
+    }
+    
+    .reference {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--gray);
+      font-size: 0.9rem;
+    }
+    
+    .reference a {
+      color: var(--primary);
+      word-break: break-all;
+    }
+    
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+      }
+      
+      nav ul li {
+        margin: 0 0.75rem;
+      }
     }
   </style>
 </head>
@@ -116,11 +159,28 @@
 
   <main>
     <div class="container">
-      <h1 class="page-title">A Daughter's Reflection</h1>
+      <h1 class="page-title">A Daughter's Reflections</h1>
       <div class="content">
-        <p>Watching my father fade into the shadows of Alzheimer’s was like losing him piece by piece. The strong man who once guided me through life became dependent, often scared, and sometimes unrecognizable. Still, I held on—learning to meet him in his world instead of trying to drag him back into mine. It was one of the hardest, most heartbreaking things I’ve ever done, yet also the most deeply meaningful.</p>
+        <p>Jean and Leonard Georges met many years ago while attending a dance at their alma mater, the University of Wyoming. After raising three children and building a fulfilling life together, Jean began noticing subtle changes in Leonard's behavior about eight years ago. He started asking repetitive questions and making uncharacteristic business decisions, which was concerning given his history of sound judgment.</p>
 
-        <p>I kept a journal throughout the years, capturing small moments: the warmth of his hand, his laughter during a lucid spell, the comfort of routine. These memories, though tinged with sorrow, are treasures I carry. I share this in hopes that others might find comfort in knowing they’re not alone, and that even amid Alzheimer’s challenges, love and grace endure.</p>
+        <p>Initially, Jean attributed these changes to normal aging or retirement-related stress. However, as Leonard's behavior became more erratic, including leaving the garden hose running overnight and becoming agitated over minor disagreements, Jean realized that something more serious might be occurring. A visit to their local primary care physician led to the suggestion that Leonard could have Alzheimer's disease, marking the beginning of a challenging journey for both.</p>
+
+        <div class="highlight-box">
+          "The transition from being a wife and partner to becoming a caregiver was emotionally taxing. It felt like losing my best friend, my love, and my business companion all at once."
+        </div>
+
+        <p>Seeking support, Jean and Leonard turned to the Cleveland Clinic's Lou Ruvo Center for Brain Health in Las Vegas. There, Leonard received a new treatment plan, and Jean was provided with resources to better understand and manage his condition. This comprehensive approach not only improved Leonard's health but also empowered Jean in her caregiving role.</p>
+
+        <p>Jean expressed deep gratitude for the support, stating, "I love the fact that it supports me and in supporting me, I can better support my husband."</p>
+
+        <p>Jean's journey underscores the importance of seeking specialized care and support when dealing with Alzheimer's disease. Her experience highlights the emotional toll that caregiving can take and the necessity of resources that address both patient and caregiver needs.</p>
+
+        <p>Through education, support, and medical intervention, Jean was able to navigate the complexities of her husband's condition while maintaining her own well-being. Her story serves as a testament to the resilience and dedication required in the face of Alzheimer's disease.</p>
+
+        <div class="reference">
+          <p><strong>Reference:</strong><br>
+          Cleveland Clinic. (n.d.). Leonard & Jean Georges: Alzheimer's patient story. Retrieved May 19, 2025, from <a href="https://my.clevelandclinic.org/patient-stories/61-slowing-the-onset-of-alzheimers">https://my.clevelandclinic.org/patient-stories/61-slowing-the-onset-of-alzheimers</a></p>
+        </div>
       </div>
     </div>
   </main>
