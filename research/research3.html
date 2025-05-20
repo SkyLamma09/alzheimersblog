@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memory Lane - A Daughter’s Reflections</title>
+  <title>Memory Lane - A Daughter's Reflections</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -21,6 +21,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       color: #333;
+      line-height: 1.8;
     }
 
     header {
@@ -85,14 +86,83 @@
     .page-title {
       text-align: center;
       color: var(--secondary);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--light);
     }
 
     .content {
       max-width: 800px;
       margin: 0 auto;
       font-size: 1.1rem;
-      line-height: 1.8;
+    }
+    
+    .content p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .highlight-box {
+      background-color: rgba(255, 126, 95, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .references {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray);
+    }
+
+    .references h2 {
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .reference-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .reference-list li {
+      margin-bottom: 1.5rem;
+      text-indent: -36px;
+      padding-left: 36px;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    .reference-list a {
+      color: var(--primary);
+      word-break: break-all;
+      text-decoration: none;
+    }
+
+    .reference-list a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+      }
+      
+      nav ul li {
+        margin: 0 0.75rem;
+      }
+
+      .reference-list li {
+        text-indent: -28px;
+        padding-left: 28px;
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
@@ -116,11 +186,26 @@
 
   <main>
     <div class="container">
-      <h1 class="page-title">A Daughter’s Reflections</h1>
+      <h1 class="page-title">A Daughter's Reflections</h1>
       <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat diam vitae nisl dapibus, ut dictum nulla cursus. Morbi volutpat ultrices quam, sed dignissim arcu tincidunt sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p>Recent studies underscore the significant impact of lifestyle choices—particularly diet, exercise, and cognitive engagement—on reducing the risk of Alzheimer's disease (AD). Adherence to the MIND diet, which combines elements of the Mediterranean and DASH diets, has been associated with a 53% reduction in AD risk among strict followers, and a 35% reduction among moderate adherents. This diet emphasizes the consumption of leafy greens, berries, nuts, and fish, while limiting red meat, butter, and sweets.</p>
 
-        <p>Curabitur pretium faucibus sem, at fermentum enim pharetra in. Proin tincidunt orci vel risus accumsan, at tincidunt justo euismod. Etiam consequat congue augue, vitae bibendum libero gravida vel. Quisque sed sapien non mauris rutrum condimentum.</p>
+        <div class="highlight-box">
+          <p>Similarly, regular physical activity plays a crucial role; aerobic exercises like brisk walking, jogging, or cycling have been shown to reduce the risk of cognitive decline by up to 50%. These activities enhance blood flow to the brain, promoting the growth of new blood vessels and neurons, thereby supporting cognitive function.</p>
+        </div>
+
+        <p>Beyond individual lifestyle factors, a comprehensive approach combining diet, exercise, and cognitive activities yields even greater benefits. A randomized controlled trial demonstrated that participants engaging in a multimodal intervention—including dietary changes, physical activity, cognitive training, and vascular risk monitoring—experienced a 25% improvement in global cognition over two years compared to a control group.</p>
+
+        <p>This holistic strategy not only enhances cognitive function but also offers a promising avenue for delaying or preventing the onset of AD, highlighting the importance of integrated lifestyle modifications in mitigating dementia risk.</p>
+
+        <section class="references">
+          <h2>References</h2>
+          <ol class="reference-list">
+            <li>Ngandu, T., Lehtisalo, J., Solomon, A., Levälahti, E., Ahtiluoto, S., Antikainen, R., ... & Kivipelto, M. (2015). A 2-year multidomain intervention of diet, exercise, cognitive training, and vascular risk monitoring versus control to prevent cognitive decline in at-risk elderly people (FINGER): A randomized controlled trial. <i>The Lancet, 385</i>(9984), 2255–2263. <a href="https://doi.org/10.1016/S0140-6736(15)60461-5">https://doi.org/10.1016/S0140-6736(15)60461-5</a></li>
+            <li>Morris, M. C., Tangney, C. C., Wang, Y., Sacks, F. M., Bennett, D. A., & Aggarwal, N. T. (2015). MIND diet slows cognitive decline with aging. <i>Alzheimer's & Dementia, 11</i>(9), 1015–1022. <a href="https://doi.org/10.1016/j.jalz.2015.04.011">https://doi.org/10.1016/j.jalz.2015.04.011</a></li>
+            <li>Laurin, D., Verreault, R., Lindsay, J., MacPherson, K., & Rockwood, K. (2001). Physical activity and risk of cognitive impairment and dementia in elderly persons. <i>Archives of Neurology, 58</i>(3), 498–504. <a href="https://doi.org/10.1001/archneur.58.3.498">https://doi.org/10.1001/archneur.58.3.498</a></li>
+          </ol>
+        </section>
       </div>
     </div>
   </main>
